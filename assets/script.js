@@ -1,3 +1,9 @@
+AOS.init({
+    duration: 1000, // durée en millisecondes
+    easing: 'ease', // pour utiliser le easing de base
+    offset: 120, // décalage par rapport au point de déclenchement
+});
+
 let title = document.getElementById('title');
 
 title.addEventListener('mouseenter', () => {
@@ -16,4 +22,26 @@ title.addEventListener('mouseleave', () => {
         title.innerText = 'FJ'; // Rétablir le texte original
         title.style.opacity = '1'; // Faire réapparaître le texte
     }, 300); // 400ms est la durée de la transition définie dans setTimeout
+});
+
+// Skills 
+document.addEventListener('scroll', function () {
+    const items = document.querySelectorAll('.list-item');
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    let activeIndex = -1;
+
+    items.forEach((item, index) => {
+        const rect = item.getBoundingClientRect();
+        if (rect.top < window.innerHeight / 2 && rect.bottom > window.innerHeight / 2) {
+            activeIndex = index;
+        }
+    });
+
+    items.forEach((item, index) => {
+        if (index === activeIndex) {
+            item.classList.add('active');
+        } else {
+            item.classList.remove('active');
+        }
+    });
 });

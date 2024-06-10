@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="assets/script.js" defer></script>
 </head>
 
@@ -17,7 +18,7 @@
     <div class="Entete">
         <nav>
             <ul>
-                <li ><a id="title">FJ</a></li>
+                <li><a id="title">FJ</a></li>
                 <li id="formBtn"><a href="#contact">Contact<i class="fa-solid fa-paper-plane"></i></a></li>
             </ul>
         </nav>
@@ -25,37 +26,60 @@
 
     <!-- Header -->
     <header>
-        <div class="presentationText">
+        <div class="presentationText" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
             <h1>Welcome in my univers 😉</h1>
             <p>This is my portfolio showcasing both myself and my skills.</p>
         </div>
-        <div class="presentationImg"> 
+        <div class="presentationImg" data-aos="fade-left" data-aos-anchor-placement="center-bottom">
             <img src="./assets/images/TEST_60001-0160.gif" alt="">
         </div>
     </header>
 
-    <!-- Main -->
-    <section>
-        <div>
-            
+    <!-- Me -->
+
+    <div id="Me" class="container">
+        <img src="./assets/images/pp.jpg" alt="profile photo" data-aos="fade-up">
+        <div data-aos="fade-left">
+            <h2 class="secondary-text">Firase Jemaa 👨‍💻</h2>
+            <h1>Cyber Security</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sint unde modi odit libero totam
+                tenetur impedit accusamus cum? Autem ipsa, ipsum nulla harum mollitia rem cupiditate! Accusamus, vel
+                praesentium!</p>
+            <img src="./assets/images/signature.png" alt="Signature">
         </div>
-    </section>
-    <section>
-        <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint ullam qui praesentium aliquid. Ab ipsum,
-            dolor incidunt iure harum quam deserunt quis tempora eveniet, laudantium dignissimos dolorem veniam.
-            Quisquam, ut!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit non ad quod quisquam dignissimos commodi
-            dolor quibusdam quidem sunt asperiores voluptate explicabo facilis fugiat, aperiam optio deleniti
-            repellendus maxime provident?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab atque dolore, magnam eius dicta fuga sint
-            eligendi harum, nam minima ea quisquam optio maiores cumque autem voluptates id quas rem!
-        </p>
-        <img src="./assets/images/01d.jpg" alt="">
-        <img src="./assets/images/01d.jpg" alt="">
-        <img src="./assets/images/01d.jpg" alt="">
-        <img src="./assets/images/01d.jpg" alt="">
-    </section>
+    </div>
+
+    <!-- Skills -->
+    <div id="Skills" class="" data-aos="fade-up">
+        <div class="logos">
+            <div class="logos-slide">
+              <img src="./assets/images/logos/html.png" />
+              <img src="./assets/images/logos/CSS.png" />
+              <img src="./assets/images/logos/js.png" />
+              <img src="./assets/images/logos/laravel.png" />
+              <img src="./assets/images/logos/react.png" />
+              <img src="./assets/images/logos/C.png" />
+              <img src="./assets/images/logos/python.png" />
+              <img src="./assets/images/logos/docker.png" />
+              <img src="./assets/images/logos/git.png" />
+              <img src="./assets/images/logos/sql.png" />
+            </div>
+      
+            <div class="logos-slide">
+              <img src="./assets/images/logos/html.png" />
+              <img src="./assets/images/logos/CSS.png" />
+              <img src="./assets/images/logos/js.png" />
+              <img src="./assets/images/logos/laravel.png" />
+              <img src="./assets/images/logos/react.png" />
+              <img src="./assets/images/logos/C.png" />
+              <img src="./assets/images/logos/python.png" />
+              <img src="./assets/images/logos/docker.png" />
+              <img src="./assets/images/logos/git.png" />
+              <img src="./assets/images/logos/sql.png" />
+            </div>
+          </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>
