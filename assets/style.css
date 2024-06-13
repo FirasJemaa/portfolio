@@ -6,7 +6,7 @@
     --clr-police: #000000;
     --clr-background: #ffffff;
     --border-radius-small: 20vh;
-    --border-radius-tall: 15px;
+    --border-radius-tall: 3vh;
     --transition-cubic: cubic-bezier(.5, .01, .5, 1);
     --container-width: 1100px;
     --container-padding: 15px;
@@ -429,6 +429,233 @@ footer a:hover {
     transform: scale(1.2);
 }
 
+/* Certification */
+.certifications {
+    height: 60vh;
+}
+
+.certification {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    border-radius: var(--border-radius-tall);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: var(--clr-police);
+    color: var(--clr-background);
+    -webkit-box-shadow: 5px 5px 20px 10px rgba(190, 190, 190, 0.9);
+    box-shadow: 5px 5px 20px 10px rgba(190, 190, 190, 0.9);
+    transition: all 0.4s cubic-bezier(.5, .01, .5, 1);
+}
+
+.certification:hover {
+    justify-content: space-around;
+    height: 35vh;
+}
+
+.certification div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.certification img {
+    width: 5%;
+}
+
+.blocs {
+    height: 0;
+    visibility: hidden;
+    transition: all 0.2s cubic-bezier(.5, .01, .5, 1);
+}
+
+.certification:hover .blocs {
+    height: auto;
+    visibility: visible;
+}
+
+.certification ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.certification ul li {
+    width: 160px;
+    list-style: none;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Circle */
+.circle {
+    width: 160px;
+    height: 160px;
+    /* background: cornflowerblue; */
+    position: relative;
+    margin: 10px;
+}
+
+.outer {
+    max-height: 160px;
+    max-width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    /*box-shadow: 6px 6px 10px -1px rgba(109, 109, 109, 0.15),
+                -6px -6px 10px -1px rgba(130, 130, 130, 0.7);*/
+}
+
+.inner {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                -0.5px -0.5px 0 rgba(255,255,255,1),
+                0.5px 0.5px 0 rgba(0,0,0,0.15),
+                0 12px 10px -10px rgba(0,0,0,0.05);*/
+}
+
+.number {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+circle {
+    fill: none;
+    stroke: url(#GradientColor1);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim1 1s cubic-bezier(.5, .01, .5, 1) forwards;
+}
+
+#circle2 {
+    stroke: url(#GradientColor2);
+    animation: anim2 1s cubic-bezier(.5, .01, .5, 1) forwards;
+}
+
+#circle3 {
+    stroke: url(#GradientColor3);
+    animation: anim3 1s cubic-bezier(.5, .01, .5, 1) forwards;
+}
+
+#circle4 {
+    stroke: url(#GradientColor4);
+    animation: anim4 1s cubic-bezier(.5, .01, .5, 1) forwards;
+}
+
+#circle5 {
+    stroke: url(#GradientColor5);
+    animation: anim5 1s cubic-bezier(.5, .01, .5, 1) forwards;
+}
+
+@keyframes anim1 {
+    100% {
+        stroke-dashoffset: 425;
+    }
+}
+
+@keyframes anim2 {
+    100% {
+        stroke-dashoffset: 377;
+    }
+}
+
+@keyframes anim3 {
+    100% {
+        stroke-dashoffset: 401;
+    }
+}
+
+@keyframes anim4 {
+    100% {
+        stroke-dashoffset: 320;
+    }
+}
+
+@keyframes anim5 {
+    100% {
+        stroke-dashoffset: 425;
+    }
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.other {
+    width: 100%;
+}
+
+.other ol {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.other ol > li {
+    width: 100%;
+    list-style: none;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.other ol > li ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.other ol > li ul li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.other i {
+    margin: 5px;
+}
+
+.fa-circle-check {
+    color: rgb(60, 182, 60);
+}
+
+.fa-circle-xmark {
+    color: rgb(182, 60, 60);
+}
+
+.fa-spinner {
+    color: rgb(196, 196, 229);
+}
+
+
 /* Media Queries */
 @media screen and (max-width: 768px) {
     header {
@@ -521,7 +748,7 @@ footer a:hover {
 }
 
 @media (max-width: 426) {
-    #Me h1{
+    #Me h1 {
         color: red;
         background-color: blue;
     }
