@@ -69,25 +69,3 @@ document
     });
   });
 
-/* Circle */
-let certification = document.getElementById('certification');
-//apparaitre la deuxieme class certification
-certification.addEventListener('mouseenter', () => {
-  let counter = 0;
-  let pourcentage = 0;
-  let number = document.getElementsByClassName('number');
-  // pour chaque number on fait : 
-  for (let i = 0; i < number.length; i++) {
-    // On récupère le nombre de pourcentage et on l'incrémente et échappé au signe %
-    pourcentage = parseInt(number[i].innerHTML);
-    console.log(pourcentage);
-    let count = setInterval(() => {
-      if (counter < pourcentage) {
-        counter++;
-        number[i].innerText = counter + '%';
-      } else {
-        clearInterval(count);
-      }
-    }, 1000);
-  }
-});

@@ -271,6 +271,7 @@ header p {
 /* Skills */
 #Skills {
     height: 30vh;
+    width: 100%;
 }
 
 @keyframes slide {
@@ -431,7 +432,7 @@ footer a:hover {
 
 /* Certification */
 .certifications {
-    height: 60vh;
+    height: 70vh;
 }
 
 .certification {
@@ -454,7 +455,7 @@ footer a:hover {
 
 .certification:hover {
     justify-content: space-around;
-    height: 35vh;
+    height: 45vh;
 }
 
 .certification div {
@@ -498,6 +499,12 @@ footer a:hover {
     flex-direction: column;
 }
 
+.certification > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
 /* Circle */
 .circle {
     width: 160px;
@@ -535,32 +542,47 @@ footer a:hover {
     font-weight: 600;
 }
 
-circle {
+.circle {
     fill: none;
     stroke: url(#GradientColor1);
     stroke-width: 20px;
     stroke-dasharray: 472;
     stroke-dashoffset: 472;
+}
+
+#RootMe:hover .circle {
     animation: anim1 1s cubic-bezier(.5, .01, .5, 1) forwards;
 }
 
 #circle2 {
     stroke: url(#GradientColor2);
+}
+
+#RootMe:hover #circle2 {
     animation: anim2 1s cubic-bezier(.5, .01, .5, 1) forwards;
 }
 
 #circle3 {
     stroke: url(#GradientColor3);
+}
+
+#RootMe:hover #circle3 {
     animation: anim3 1s cubic-bezier(.5, .01, .5, 1) forwards;
 }
 
 #circle4 {
     stroke: url(#GradientColor4);
+}
+
+#RootMe:hover #circle4 {
     animation: anim4 1s cubic-bezier(.5, .01, .5, 1) forwards;
 }
 
 #circle5 {
     stroke: url(#GradientColor5);
+}
+
+#RootMe:hover #circle5 {
     animation: anim5 1s cubic-bezier(.5, .01, .5, 1) forwards;
 }
 
@@ -613,9 +635,7 @@ svg {
 }
 
 .other ol > li {
-    width: 100%;
     list-style: none;
-    font-size: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -744,6 +764,23 @@ svg {
 
     #topButton {
         visibility: hidden;
+    }
+
+    .certifications {
+        height: auto;
+    }
+
+    .certification {        
+        padding: 10px 0;
+    }
+
+    .certification:hover {
+        height: auto;
+    }
+
+    .blocs ul {
+        flex-direction: column;
+    
     }
 }
 
