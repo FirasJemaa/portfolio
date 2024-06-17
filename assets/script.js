@@ -1,4 +1,4 @@
-//alert('Le site est en cours de construction, merci de votre compréhension !');
+alert('Le responsive n\'a pas était terminé, désolé pour la gêne occasionnée. Merci de votre compréhension.');
 
 AOS.init({
   duration: 1000, // durée en millisecondes
